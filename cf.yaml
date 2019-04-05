@@ -9,5 +9,9 @@ Resources:
     Properties:
 
   geohash:
-    Type: AWS::Serverless::Function
+    Type: 'AWS::Serverless::Function'
     Properties:
+      Handler: index.handler
+      Runtime: nodejs6.10
+      CodeUri: 's3://my-bucket/function.zip'
+
